@@ -1,0 +1,14 @@
+-June 12th, Started revision of Heavenly paint and body shop
+-june 14th added images and content to index page.  added email link and some CSS also.  Finish the footer on the home page.4
+-june 16th fix problem of showcase image (which is the large image of the shop) for responsiveness by changing the width: 1800px
+	to width: 100%.
+- june 16th downloaded another image of shop for showcase.  The first image had poor quality and resolution where as the current image
+	looks excellent.
+-june 17th completed the About page with content and designed it for Responsiveness using Media Queries.
+
+
+
+
+-to do
+use node.js on the backend and attempt to host or deploy it with netlify
+add form to seervice page and business hours to service page and attempt to create connection with netlify to connect form to server.

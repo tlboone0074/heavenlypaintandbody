@@ -1,0 +1,285 @@
+body {
+    Padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+/*-----------------------------------------    global      --------------------------------------*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* -----By default Unordered list have padding.  So we want to set that to zero and remove it and the margin. */
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------     Header   ------------------------------------------- */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+
+
+    header li {
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+
+    header #shop {
+        float: left;
+    }
+
+    header #shop h1, header #shop p {
+        margin: 0;
+    }
+
+    header nav {
+        float: right;
+        margin-top: 15px;
+    }
+
+    header .highlight, ul .current a {
+        color: #e8491d;
+        font-weight: bold;
+    }
+
+    header a:hover {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+/*---------------------------------   Showcase   ------------------------------------*/
+
+#showcase {
+    min-height: 400px;
+    background: url('../images/heavenly-body.png') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+
+}
+
+    #showcase h1 {
+        margin-top: 100px;
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    #showcase .highlight {
+        color: #e8491d;
+        font-weight: bold;
+
+    }
+
+#email-submit {
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+    #email-submit a {
+        color: #e8491d;
+        font-weight: bold;
+        background: #35424a;
+    }
+
+
+    /* references the content(experts and email) for the span tag */
+    #email-submit .highlight {
+        color: #e8491d;
+        font-weight: bold;
+    }
+
+
+/*  ---------------------  images and info   ----------------------------------- */
+#auto-images {
+    margin-top: 30px;
+}
+
+
+    #auto-images .box {
+        float: left;
+        width: 30%;
+        text-align: center;
+        padding: 20px;
+    }
+
+        #auto-images .box img {
+            width: 120px;
+        }
+
+
+/*---------------------------------------------------  About.html  ------------------------------------------*/
+
+
+/*   -- The article and sidebar tags that with the About Us and Location content ---*/
+#main-col {
+    float:left;
+    width: 55%;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
+/*----------------------       properties for "second-col", the column on the right      -----------------------------*/ 
+
+.second-col {
+    padding: 25px;
+    color: #ffffff;
+    background: #35424a;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* ----------------------------   The location section on the about page       --------------------------------------*/
+
+#location-and-map h4 {
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+    border-bottom: #e8491d 3px solid;
+    background-color: #e8491d;
+}
+
+#map iframe {
+    width: 100%;
+    height: 300px; 
+  
+}
+
+
+/*   ------------------------------------  Services.html  -------------------------------------------------------------*/
+
+
+/*----------- reference the two columns on the left  ---*/
+#services-sec-one ol, #services-sec-two ul {
+    padding: 5px 0 5px 30px;
+    border: #cccccc solid 1px;
+    margin-bottom: 15px;
+    background-color: #e6e6e6;
+    float: left;
+    width: 40%;
+}
+
+/*reference the two columns on the right*/
+
+#services-sec-one .quote, #services-sec-two #hours {
+    float: right;
+    color: #ffffff;
+    background-color: #35424a;
+    padding: 10px 10px 10px 10px;
+    width: 25%;
+}
+
+/*reference the text and text area*/
+.quote input, .quote textarea {
+    display: block;
+    width: 90%;
+    padding: 5px;
+}
+
+.btn-send {
+    color: #ffffff;
+    background-color: #e8491d;
+    display: block;
+    width: 93%;
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+.quote h3 {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+/*adds space between the bottom of hours and the email submission  -*/
+#hours {
+    margin-bottom: 20px;
+}
+
+/*  ------------------------removes the numbers from the list of hours     -------------------------------*/
+#hours li {
+    list-style: none;
+}
+
+/* ---------------------properties for the business hours title     - ----------------------------------*/ 
+#hours h3 {
+    color: #e8491d;
+    font-weight: bold;
+
+ }
+
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+/*    ------------------------------------------------------------Media Queries   ----------------------------------------------
+    ----------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 768px) {
+
+    header #shop,
+    header nav,
+    header nav li,
+    #email-submit p,
+    #auto-images .box,
+    #main-col,
+    #sidebar,
+    .secong-col,
+    #location p,
+    #map iframe,
+    #services-sec-one ol,
+    #services-sec-one .quote,
+    #services-sec-two #hours,
+    #services-sec-two ul
+    {
+        list-style: none;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #showcase {
+        
+        background: url('../images/heavenly-body.png') no-repeat  -300px 0;
+      
+    }
+}
+
